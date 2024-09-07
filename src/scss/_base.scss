@@ -1,0 +1,234 @@
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+html {
+  height: 100%;
+  margin: 0 !important;
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: $os;
+    font-weight: 300;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $os;
+      line-height: 1.2;
+      color: $heading_color;
+      letter-spacing: 1.1px;
+      font-weight: 700;
+
+      span,
+      a {
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: inherit;
+        font-family: inherit;
+      }
+    }
+
+    p,
+    ul li,
+    ol li,
+    span,
+    a,
+    b,
+    address,
+    strong,
+    dl,
+    dt,
+    dd,
+    th,
+    td {
+      font-family: $os;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.5;
+      color: $dark;
+    }
+
+    strong, b {
+      font-family: $os;
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+      color: $primary_color;
+      transition: all 0.2s ease-in-out;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+     a:hover {
+       color: $accent;
+     }
+
+    .widget {
+      margin: 0;
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+    }
+
+    #content {
+      padding-bottom: 40px;
+    }
+
+     Base styles for pages/content/main area
+    #main {
+      img.lazy {
+        background: $light;
+        width: 10px;
+        height: 10px;
+      }
+
+      &.page-404 {
+        h1 {
+          margin: 0;
+        }
+
+        p {
+          margin: 15px 0 20px;
+        }
+      }
+
+      .entry-header {
+        margin: 0 0 20px;
+        border-bottom: 1px solid $heading_color;
+      }
+
+      .entry-content {
+        margin-top: 0;
+
+        h2 {
+          font-size: 21px;
+          margin-bottom: 30px;
+
+          @media (min-width: 768px) {
+            font-size: 24px;
+          }
+
+          @media (min-width: 992px) {
+            font-size: 27px;
+          }
+        }
+
+        h3 {
+          font-size: 18px;
+          margin: 25px 0 10px;
+
+          @media (min-width: 768px) {
+            font-size: 20px;
+          }
+
+          @media (min-width: 992px) {
+            font-size: 23px;
+          }
+        }
+
+        h4 {
+          font-size: 16px;
+          margin: 20px 0 8px;
+
+          @media (min-width: 768px) {
+            font-size: 18px;
+          }
+
+          @media (min-width: 992px) {
+            font-size: 21px;
+          }
+        }
+
+        h5 {
+          font-size: 14px;
+          margin: 15px 0 5px;
+
+          @media (min-width: 768px) {
+            font-size: 16px;
+          }
+
+          @media (min-width: 992px) {
+            font-size: 18px;
+          }
+        }
+
+        h6 {
+          font-size: 13px;
+          margin: 10px 0 5px;
+
+          @media (min-width: 768px) {
+            font-size: 15px;
+          }
+
+          @media (min-width: 992px) {
+            font-size: 16px;
+          }
+        }
+
+        p {
+          margin: 0 0 25px;
+        }
+        @media (max-width: 576px) {
+					.wp-block-image {
+						.alignleft, .alignright, .aligncenter {
+							margin: 0;
+							width: 100%;
+						}
+          }
+        }
+        img,
+        figure {
+          padding: 5px;
+          margin: 5px auto 10px;
+
+          @media (min-width: 768px) {
+            width: initial;
+
+            &.aligncenter {
+              margin: 20px auto;
+            }
+
+            &.alignleft {
+              float: left;
+              margin-right: 15px;
+            }
+
+            &.alignright {
+              float: right;
+              margin-left: 15px;
+            }
+          }
+
+          &.featured-image {
+            margin-top: 0;
+          }
+        }
+
+        figure {
+          img {
+            margin-bottom: 5px;
+          }
+
+          figcaption {
+            font-size: 12px;
+
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

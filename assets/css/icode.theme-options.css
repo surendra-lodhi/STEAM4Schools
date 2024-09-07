@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Theme Options Admin Styles
+   ========================================================================== */
+
+#option-page-heading {
+	background: #0181ff;
+	margin: -10px -20px 20px -22px;
+	padding: 10px 22px;
+	border-bottom: 1px solid #aaa;
+}
+
+#option-page-heading h1 {
+	color: #fff;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-shadow: 0.5px 0.5px 3px #333;
+	letter-spacing: 0.5px;
+}
+#option-page-heading h1 img {
+	max-width: 210px;
+	margin-right: -10px;
+}
+
+#logo-preview {
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	width: 420px;
+	height: 140px;
+	margin-bottom: 10px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+#favicon-preview {
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 10px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+input, textarea {
+	width: 500px;
+	line-height: 24px;
+	border-radius: 3px;
+	border: 1px solid #aaa !important;
+	margin-bottom: 5px;
+}
+textarea {
+	width: 100%;
+}
+input[type="submit"], input[type="button"] {
+	width: initial;
+	border: 1px solid #aaa !important;
+	margin-right: 5px !important;
+}
+input[type="submit"] {
+	background: #0181ff !important;
+    border-color: #965b15 !important;
+    box-shadow: 0 1px 0 #965b15 !important;
+    color: #fff;
+    text-decoration: none;
+	text-shadow: 0 -1px 1px #965b15, 1px 0 1px #965b15, 0 1px 1px #965b15, -1px 0 1px #965b15 !important;
+	height: 40px !important;
+	font-size: 18px !important;
+}
+
+.pre-block {
+	tab-size: 2;
+}
+
+.option-group-panel {
+	padding: 30px;
+	border: 1px solid #aaa;
+	background: #fff;
+	margin: 20px 0;
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 3px;
+}
+
+.option-group-panel h2 {
+	margin: 0 0 5px;
+}
+
+.notice, div.updated {
+	background: rgba(255,255,255, 0.5) !important;
+}

@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Single Post Styles
+   ========================================================================== */
+
+body.single {
+	#main {
+		article {
+			.entry-content {
+				img.featured-image {
+					@media (min-width: 992px) {
+						width: 300px !important;
+						margin-left: 10px !important;
+					}
+
+					@media (min-width: 1200px) {
+						width: 400px !important;
+					}
+				}
+
+				.no-content-msg {
+					margin: 30px auto;
+				}
+			}
+
+			.entry-footer {
+				margin-top: 20px;
+
+				.entry-footer-meta {
+					padding: 15px 10px 5px;
+					background: $light;
+				}
+
+				span {
+					display: block;
+					font-size: 14px;
+					margin-bottom: 10px;
+					font-weight: bold;
+
+					a {
+						color: $dark;
+						font-size: 14px;
+						font-weight: 300;
+
+						&:hover {
+							color: $accent;
+						}
+					}
+
+					&.tags-links a {
+						font-style: italic;
+					}
+				}
+
+				nav.navigation {
+					border-top: 1px solid $gray;
+					border-bottom: 1px solid $gray;
+					padding: 10px 0;
+					margin: 15px 0;
+
+					.nav-links {
+						min-height: 25px;
+
+						.nav-previous,
+						.nav-next {
+							a {
+								display: inline-block;
+								color: #fff;
+								background: $primary_color;
+								padding: 3px 10px;
+								font-size: 13px;
+								border-radius: 2px;
+								transition: background 0.2s;
+
+								&:hover {
+									background: $dark;
+									transition: background 0.2s;
+								}
+							}
+						}
+
+						.nav-previous {
+							float: left;
+						}
+
+						.nav-next {
+							float: right;
+						}
+					}
+				}
+			}
+		}
+
+		#single-related-posts {
+			margin-top: 15px;
+			padding: 20px;
+			background: $light;
+
+			h4 {
+				margin: 0 0 20px;
+				font-size: 26px;
+			}
+
+			.related-post-wrapper {
+				background: $light;
+				margin: 30px 0;
+				padding: 5px 0 10px;
+				clear: both;
+				border-bottom: 1px solid #aaa;
+
+				>.post {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+				}
+
+				.related-post-img {
+					img {
+						margin-right: 20px;
+						max-width: 200px;
+						padding: 5px;
+						background: #fff;
+						border: 1px solid $gray;
+					}
+				}
+
+				.related-post-title {
+					flex-grow: 1;
+
+					h5 {
+						font-size: 20px;
+						margin: 0 0 3px;
+					}
+
+					.related-post-meta {
+						font-style: italic;
+						margin: 0 0 10px;
+
+						a {
+							font-family: $os;
+							font-weight: 500;
+							color: #666;
+							font-size: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

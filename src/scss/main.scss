@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Include Partials
+   ========================================================================== */
+
+// wp theme meta
+@import "theme_setup";
+
+// vendors
+@import "bootstrap";
+@import "fontawesome";
+
+// theme
+@import "vars";
+@import "base";
+@import "components";
+@import "header";
+@import "footer";
+@import "page";
+@import "blog";
+@import "single";
+@import "sidebar";
+@import "frontpage";

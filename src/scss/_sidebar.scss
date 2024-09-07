@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Sidebar Styles
+   ========================================================================== */
+
+aside#secondary {
+	text-align: center;
+	margin-top: 40px;
+
+	@media (min-width: 768px) {
+		text-align: left;
+		margin-top: 0;
+	}
+
+	.widget {
+		margin-bottom: 30px;
+
+		.widget-title {
+			display: block;
+			font-family: $os;
+			font-weight: 500;
+			font-size: 22px;
+			margin: 10px 0;
+			color: $heading_color;
+		}
+
+		ul {
+			li {
+				margin-bottom: 7px;
+				line-height: 1.3;
+			}
+		}
+	}
+}
