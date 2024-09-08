@@ -6,12 +6,18 @@ html {
   height: 100%;
   margin: 0 !important;
   body {
+    font-size: 19px;
     height: 100%;
     display: flex;
     flex-direction: column;
     font-family: $os;
-    font-weight: 300;
-
+    font-weight: 400;
+    @media (max-width: 1199px) {
+      font-size:18px;
+    }
+    @media (max-width: 991px) {
+      font-size:17px;
+    }
     h1,
     h2,
     h3,
@@ -21,16 +27,39 @@ html {
       font-family: $os;
       line-height: 1.2;
       color: $heading_color;
-      letter-spacing: 1.1px;
-      font-weight: 700;
-
+      font-weight: 500;
+      margin: 0px 0 12px;
       span,
       a {
         font-weight: inherit;
         font-style: inherit;
         font-size: inherit;
         font-family: inherit;
+      } 
+    }
+    h1 {
+      font-size: 50px;
+      @media (max-width: 1199px) {
+        font-size: 40px;
       }
+      @media (max-width: 991px) {
+        font-size: 36px;
+      }
+    }
+    h2 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 21px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    h6 {
+      font-size: 16px;
     }
 
     p,
@@ -47,12 +76,29 @@ html {
     th,
     td {
       font-family: $os;
-      font-weight: 300;
-      font-size: 16px;
+      font-weight: 400;
+      font-size: 19px;
       line-height: 1.5;
       color: $dark;
+      @media (max-width: 1199px) {
+        font-size:18px;
+      }
+      @media (max-width: 991px) {
+        font-size:17px;
+      }
     }
-
+    p {
+      margin:0 0 20px 0; 
+      line-height: 29px; 
+      @media (max-width: 1199px) {
+        line-height: 26px;
+        font-size: 18px;
+      }
+      @media (max-width: 991px) {
+        line-height: 24px;
+        font-size: 17px;
+      }
+    }
     strong, b {
       font-family: $os;
       font-weight: 700;
@@ -68,9 +114,9 @@ html {
       text-decoration: none;
     }
 
-     a:hover {
-       color: $accent;
-     }
+    a:hover {
+     color: $primary_color;
+    }
 
     .widget {
       margin: 0;
@@ -82,10 +128,10 @@ html {
     }
 
     #content {
-      padding-bottom: 40px;
+      /*background: #343d4d;*/
     }
 
-     Base styles for pages/content/main area
+    /*Base styles for pages/content/main area*/
     #main {
       img.lazy {
         background: $light;

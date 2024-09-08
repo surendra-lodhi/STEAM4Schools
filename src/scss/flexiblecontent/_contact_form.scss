@@ -1,0 +1,119 @@
+.contact-form-section{ 
+    background-color: #000ca8; 
+    padding: 50px 0 50px 0; 
+    color: #fff;
+    .contact-form-wrap{
+        max-width: 1026px;
+        margin: 0 auto;
+        h2{ 
+            text-align: center; 
+            color: $white; 
+            margin-bottom:40px;
+            @media (max-width: 767px) {
+                margin-bottom:30px;
+            } 
+        }
+        .contact-form{
+            p{
+                color: $white;
+                span{
+                    color: $white;
+                }
+            }
+            .gform_body{
+                p{
+                    color: $white;
+                    span{
+                        color: $white;
+                    }
+                }
+                input{
+                    font-size: 16px !important;
+                    border: none;
+                    padding: 20px 25px !important;
+                    line-height: 24px;
+                    @media (max-width: 1199px) {
+                        padding: 15px 20px !important;
+                    }
+                    @media (max-width: 767px) {
+                        padding: 10px 15px !important;
+                    }
+                    &:focus-visible{
+                        outline: none;
+                    }                
+                }
+                textarea{
+                    font-size: 16px !important;
+                    border: none;
+                    padding: 20px 25px !important;
+                    line-height: 24px;
+                    @media (max-width: 1199px) {
+                        padding: 15px 20px !important;
+                    }
+                    @media (max-width: 767px) {
+                        padding: 10px 15px !important;
+                    }                 
+                }
+                select{
+                    font-size: 16px !important;
+                    border: none;
+                    padding: 20px 25px !important;
+                    line-height: 24px;
+                    @media (max-width: 1199px) {
+                        padding: 15px 20px !important;
+                    }
+                    @media (max-width: 767px) {
+                        padding: 10px 15px !important;
+                    }                 
+                }
+            }
+            
+        }
+    }
+}
+
+.gform_footer{
+    @media (max-width: 767px) {
+        margin: 0;
+        justify-content: center;
+    }
+    .gform_button{
+        font-size: 20px;
+        width: 188px;
+        color: $white;
+        background-color: $black;
+        border: 2px solid $black;
+        border-radius: 0px;
+        display: inline-block;
+        text-align: center;
+        line-height: 26px;
+        font-weight: 500;
+        padding: 23px 20px;
+        min-width: 201px;
+        cursor: pointer;
+        @media (max-width: 1199px) {
+            font-size: 18px; 
+            padding: 15px 20px;
+        }
+        @media (max-width: 991px) {
+            font-size: 17px; 
+        }
+        @media (max-width: 767px) {
+            padding: 12px 15px;
+        }
+        &:hover{
+            background-color: $primary_color;
+            color: $white;
+        }
+        &:focus {
+            background-color:$primary_color;
+            color: $white;
+        }
+    }
+}
+
+/*gform validation css*/
+.contact-form-section .gform_wrapper .gform_validation_errors{ display: none; }
+.contact-form-section .gform_wrapper .gfield_validation_message, 
+.contact-form-section .gform_wrapper .validation_message {background: transparent !important; border: none !important; font-size: 14px !important; margin-top: 8px !important; padding: 0 !important; color: #ff4217 !important;}
+.contact-form-section .gform_confirmation_message{ text-align:center; }
